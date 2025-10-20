@@ -10,18 +10,32 @@ import SDWebImage
 import SDWebImageSwiftUI
 
 struct ContentView: View {
-    let imageUrl = "https://i.scdn.co/image/ab67616d0000b273c58b581c98eafab982391a6d.jpg"
+    var currentSong = CurrentSong(name: "Song Name", url: "https://i.scdn.co/image/ab67616d0000b273c58b581c98eafab982391a6d.jpg")
     
     var body: some View {
         VStack {
             Text("Connect to Spotify!")
-            Text("Insert album art here")
+            Text(currentSong.name)
             
-            WebImage(url:URL(string: imageUrl))
+            AsyncImage(url: URL(string: currentSong.url)) { phase in
+                if let image = phase.image {
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                } else if phase.error != nil {
+                    Text("Error loading image")
+                    Text(phase.error?.localizedDescription ?? "Error")
+                     // Display an error message
+                } else {
+                    ProgressView() // Show a loading indicator
+                }
+            }
+            
+            WebImage(url:URL(string: currentSong.url))
                 .resizable()
                 .indicator(.activity)
                 .scaledToFit()
-                .frame(width: 100.0, height:100.0)
+                .frame(width: 250, height: 250)
 
         }
         .padding()
