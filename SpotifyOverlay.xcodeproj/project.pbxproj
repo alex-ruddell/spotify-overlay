@@ -15,6 +15,8 @@
 		52EA3DC62EA5E82900B3BD0E /* SpotifyOverlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DC52EA5E82900B3BD0E /* SpotifyOverlayUITests.swift */; };
 		52EA3DC82EA5E82900B3BD0E /* SpotifyOverlayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DC72EA5E82900B3BD0E /* SpotifyOverlayUITestsLaunchTests.swift */; };
 		52EA3DD52EA600E400B3BD0E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DD42EA600E400B3BD0E /* ButtonView.swift */; };
+		52EA3DD92EA61A5D00B3BD0E /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */; };
+		52EA3DDC2EA61B7C00B3BD0E /* CurrentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		52EA3DC52EA5E82900B3BD0E /* SpotifyOverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyOverlayUITests.swift; sourceTree = "<group>"; };
 		52EA3DC72EA5E82900B3BD0E /* SpotifyOverlayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyOverlayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52EA3DD42EA600E400B3BD0E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSong.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,13 @@
 		52EA3DA82EA5E82800B3BD0E /* SpotifyOverlay */ = {
 			isa = PBXGroup;
 			children = (
+				52EA3DDA2EA61B6F00B3BD0E /* Model */,
+				52EA3DD72EA61A2300B3BD0E /* Controller */,
+				52EA3DD62EA61A1C00B3BD0E /* View */,
 				52EA3DA92EA5E82800B3BD0E /* SpotifyOverlayApp.swift */,
-				52EA3DAB2EA5E82800B3BD0E /* ContentView.swift */,
 				52EA3DAD2EA5E82900B3BD0E /* Assets.xcassets */,
 				52EA3DB22EA5E82900B3BD0E /* SpotifyOverlay.entitlements */,
 				52EA3DAF2EA5E82900B3BD0E /* Preview Content */,
-				52EA3DD42EA600E400B3BD0E /* ButtonView.swift */,
 			);
 			path = SpotifyOverlay;
 			sourceTree = "<group>";
@@ -130,6 +135,31 @@
 				52EA3DC72EA5E82900B3BD0E /* SpotifyOverlayUITestsLaunchTests.swift */,
 			);
 			path = SpotifyOverlayUITests;
+			sourceTree = "<group>";
+		};
+		52EA3DD62EA61A1C00B3BD0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52EA3DAB2EA5E82800B3BD0E /* ContentView.swift */,
+				52EA3DD42EA600E400B3BD0E /* ButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52EA3DD72EA61A2300B3BD0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52EA3DDA2EA61B6F00B3BD0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +295,8 @@
 				52EA3DAC2EA5E82800B3BD0E /* ContentView.swift in Sources */,
 				52EA3DAA2EA5E82800B3BD0E /* SpotifyOverlayApp.swift in Sources */,
 				52EA3DD52EA600E400B3BD0E /* ButtonView.swift in Sources */,
+				52EA3DDC2EA61B7C00B3BD0E /* CurrentSong.swift in Sources */,
+				52EA3DD92EA61A5D00B3BD0E /* SpotifyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
