@@ -17,6 +17,7 @@
 		52EA3DD52EA600E400B3BD0E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DD42EA600E400B3BD0E /* ButtonView.swift */; };
 		52EA3DD92EA61A5D00B3BD0E /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */; };
 		52EA3DDC2EA61B7C00B3BD0E /* CurrentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */; };
+		52EA3DDF2EA61F6F00B3BD0E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52EA3DDE2EA61F6F00B3BD0E /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EA3DDF2EA61F6F00B3BD0E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +180,9 @@
 			dependencies = (
 			);
 			name = SpotifyOverlay;
+			packageProductDependencies = (
+				52EA3DDE2EA61F6F00B3BD0E /* SDWebImageSwiftUI */,
+			);
 			productName = SpotifyOverlay;
 			productReference = 52EA3DA62EA5E82800B3BD0E /* SpotifyOverlay.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +255,9 @@
 				Base,
 			);
 			mainGroup = 52EA3D9D2EA5E82800B3BD0E;
+			packageReferences = (
+				52EA3DDD2EA61F6F00B3BD0E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 52EA3DA72EA5E82800B3BD0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -611,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52EA3DDD2EA61F6F00B3BD0E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52EA3DDE2EA61F6F00B3BD0E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52EA3DDD2EA61F6F00B3BD0E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52EA3D9E2EA5E82800B3BD0E /* Project object */;
 }
