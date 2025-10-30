@@ -10,5 +10,6 @@ import Foundation
 struct CurrentSong : Codable, Identifiable {
     var id = UUID()
     var name: String
+    var artist: String
     var url: String
 }

@@ -18,6 +18,7 @@
 		52EA3DD92EA61A5D00B3BD0E /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */; };
 		52EA3DDC2EA61B7C00B3BD0E /* CurrentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */; };
 		52EA3DDF2EA61F6F00B3BD0E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52EA3DDE2EA61F6F00B3BD0E /* SDWebImageSwiftUI */; };
+		52EA3DE32EB35F2B00B3BD0E /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3DE22EB35F2B00B3BD0E /* TrackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = 52EA3DA52EA5E82800B3BD0E;
 			remoteInfo = SpotifyOverlay;
+		};
+		52EA3E062EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435027A1A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+		52EA3E082EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
+			remoteInfo = OAuthSwiftMacOS;
+		};
+		52EA3E0A2EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
+			remoteInfo = OAuthSwiftTVOS;
+		};
+		52EA3E0C2EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40890C01C11B37000E3146A;
+			remoteInfo = OAuthSwiftWatchOS;
+		};
+		52EA3E0E2EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F451E3C5195B8CD80051434C;
+			remoteInfo = OAuthSwiftDemo;
+		};
+		52EA3E102EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
+			remoteInfo = OAuthSwiftMacOSDemo;
+		};
+		52EA3E122EB3627100B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
+			remoteInfo = OAuthSwiftTests;
+		};
+		52EA3E142EB3628000B3BD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +109,8 @@
 		52EA3DD42EA600E400B3BD0E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		52EA3DD82EA61A5D00B3BD0E /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
 		52EA3DDB2EA61B7C00B3BD0E /* CurrentSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSong.swift; sourceTree = "<group>"; };
+		52EA3DE22EB35F2B00B3BD0E /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = ../../OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +142,7 @@
 		52EA3D9D2EA5E82800B3BD0E = {
 			isa = PBXGroup;
 			children = (
+				52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */,
 				52EA3DA82EA5E82800B3BD0E /* SpotifyOverlay */,
 				52EA3DBA2EA5E82900B3BD0E /* SpotifyOverlayTests */,
 				52EA3DC42EA5E82900B3BD0E /* SpotifyOverlayUITests */,
@@ -144,6 +204,7 @@
 			children = (
 				52EA3DAB2EA5E82800B3BD0E /* ContentView.swift */,
 				52EA3DD42EA600E400B3BD0E /* ButtonView.swift */,
+				52EA3DE22EB35F2B00B3BD0E /* TrackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +225,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		52EA3DFD2EB3627100B3BD0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52EA3E072EB3627100B3BD0E /* OAuthSwift.framework */,
+				52EA3E092EB3627100B3BD0E /* OAuthSwift.framework */,
+				52EA3E0B2EB3627100B3BD0E /* OAuthSwift.framework */,
+				52EA3E0D2EB3627100B3BD0E /* OAuthSwift.framework */,
+				52EA3E0F2EB3627100B3BD0E /* OAuthSwiftDemo.app */,
+				52EA3E112EB3627100B3BD0E /* OAuthSwiftMacOSDemo.app */,
+				52EA3E132EB3627100B3BD0E /* OAuthSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +253,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				52EA3E152EB3628000B3BD0E /* PBXTargetDependency */,
 			);
 			name = SpotifyOverlay;
 			packageProductDependencies = (
@@ -260,6 +336,12 @@
 			);
 			productRefGroup = 52EA3DA72EA5E82800B3BD0E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52EA3DFD2EB3627100B3BD0E /* Products */;
+					ProjectRef = 52EA3DFC2EB3627100B3BD0E /* OAuthSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52EA3DA52EA5E82800B3BD0E /* SpotifyOverlay */,
@@ -268,6 +350,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52EA3E072EB3627100B3BD0E /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 52EA3E062EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E092EB3627100B3BD0E /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 52EA3E082EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E0B2EB3627100B3BD0E /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 52EA3E0A2EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E0D2EB3627100B3BD0E /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 52EA3E0C2EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E0F2EB3627100B3BD0E /* OAuthSwiftDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftDemo.app;
+			remoteRef = 52EA3E0E2EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E112EB3627100B3BD0E /* OAuthSwiftMacOSDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftMacOSDemo.app;
+			remoteRef = 52EA3E102EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52EA3E132EB3627100B3BD0E /* OAuthSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthSwiftTests.xctest;
+			remoteRef = 52EA3E122EB3627100B3BD0E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52EA3DA42EA5E82800B3BD0E /* Resources */ = {
@@ -304,6 +438,7 @@
 				52EA3DAA2EA5E82800B3BD0E /* SpotifyOverlayApp.swift in Sources */,
 				52EA3DD52EA600E400B3BD0E /* ButtonView.swift in Sources */,
 				52EA3DDC2EA61B7C00B3BD0E /* CurrentSong.swift in Sources */,
+				52EA3DE32EB35F2B00B3BD0E /* TrackView.swift in Sources */,
 				52EA3DD92EA61A5D00B3BD0E /* SpotifyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +472,11 @@
 			isa = PBXTargetDependency;
 			target = 52EA3DA52EA5E82800B3BD0E /* SpotifyOverlay */;
 			targetProxy = 52EA3DC22EA5E82900B3BD0E /* PBXContainerItemProxy */;
+		};
+		52EA3E152EB3628000B3BD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = 52EA3E142EB3628000B3BD0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -465,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SpotifyOverlay/SpotifyOverlay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -491,6 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SpotifyOverlay/SpotifyOverlay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
